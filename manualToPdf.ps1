@@ -1,0 +1,13 @@
+pandoc `
+    --metadata title="Anki Manual 20201222" `
+    --filter ..\fix-links-single-file.py `
+    --pdf-engine=xelatex `
+    --variable "urlcolor=cyan" `
+    -V geometry:margin=0.2in `
+    -V papersize:a5 `
+    -V mainfont="DejaVu Sans" `
+    --include-in-header ..\pandocHeader.tex `
+    -s $(cat ..\pandocIncludes.txt) `
+    -f markdown-raw_tex `
+    -t pdf `
+    -o ..\AnkiManual-20201222.pdf

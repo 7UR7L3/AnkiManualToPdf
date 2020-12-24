@@ -28,4 +28,4 @@ So I gave up and "did it myself" with pandoc.
 
 I probably should have dug into and fixed the existing `docsify-to-pdf` hyperlinking but I only had that realization shortly after pandoc was spitting out pretty much ideal stuff. `docsify-to-pdf\src\markdown-combine.js` is probably more or less what the pandoc filter does.
 
-But really I should combine the ideas and either leverage docsify's own code to link things up, or see if pandoc filters have access to the entire merged input so that I could properly deduce the linkages. Cause pandoc output flexibility is ideal. Poke around stackoverflow for cross-document multiple files markdown pandoc strategies.
+But really I should combine the ideas and either leverage docsify's own code to link things up, or see if pandoc filters have access to the entire merged input so that I could properly deduce the linkages. Cause pandoc output flexibility is ideal. Poke around stackoverflow for cross-document multiple files hyperlinked markdown pandoc strategies.

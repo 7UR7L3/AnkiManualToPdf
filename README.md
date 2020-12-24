@@ -5,7 +5,7 @@ Can run example script `..\manualToHTML.ps1` from `.\anki-manual\` to regenerate
 
 ---
 
-I have a nice ereader that plays much nicer with pdfs than it does with websites. I wanted to comfortably read the Anki manual.
+I have a nice ereader that plays much nicer with pdfs and epubs than it does with websites. I wanted to comfortably read the Anki manual.
 
 Anki moved from the nice single page docs to docsify. Docsify has no way to export to pdf or even to static html (maybe that will change eventually https://github.com/docsifyjs/docsify/issues/136).
 

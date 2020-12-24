@@ -1,5 +1,5 @@
 # AnkiManualToPdf
-Pandoc script and filter to convert https://github.com/ankitects/anki-manual docsify site to standalone hyperlinked pdf or epub or html or anything supported by pandoc. Pretty crude but pretty straightforward.
+Pandoc filter and scripts to convert https://github.com/ankitects/anki-manual docsify site to standalone hyperlinked pdf or epub or html or anything supported by pandoc. Pretty crude but pretty straightforward.
 
 Can run example script `..\manualToHTML.ps1` from `.\anki-manual\` to regenerate.
 

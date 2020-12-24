@@ -1,5 +1,5 @@
 # AnkiManualToPdf
-Pandoc script and filter to convert https://github.com/ankitects/anki-manual docsify site to standalone hyperlinked pdf or html. Pretty crude but pretty straightforward.
+Pandoc script and filter to convert https://github.com/ankitects/anki-manual docsify site to standalone hyperlinked pdf or epub or html or anything supported by pandoc. Pretty crude but pretty straightforward.
 
 Can run example script `..\manualToHTML.ps1` from `.\anki-manual\` to regenerate.
 
@@ -26,4 +26,6 @@ So I gave up and "did it myself" with pandoc.
 - assumes that links to `foo.md#bar` link to a unique `#bar` and doesn't do anything clever to work out `#bar-n`
 - doesn't change anything about `#baz` links
 
-Really I probably should have dug into and fixed the existing `docsify-to-pdf` hyperlinking but I only had that realization shortly after pandoc was spitting out pretty much ideal stuff. `docsify-to-pdf\src\markdown-combine.js` is probably more or less what the pandoc filter does.
+I probably should have dug into and fixed the existing `docsify-to-pdf` hyperlinking but I only had that realization shortly after pandoc was spitting out pretty much ideal stuff. `docsify-to-pdf\src\markdown-combine.js` is probably more or less what the pandoc filter does.
+
+But really I should combine the ideas and either leverage docsify's own code to link things up, or see if pandoc filters have access to the entire merged input so that I could properly deduce the linkages. Cause pandoc output flexibility is ideal.
